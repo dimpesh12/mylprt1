@@ -1,7 +1,5 @@
 # Use an Ubuntu base image
-FROM ubuntu:apache2
-
-sudo apt update
+FROM ubuntu/apache2
 
 # Copy your custom index.html file to the Apache web root
 COPY index.html /var/www/html/
